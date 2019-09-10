@@ -1,0 +1,21 @@
+From fef949874044ab9a9171b3e5f0aaed2c9e3ac39f Mon Sep 17 00:00:00 2001
+From: Pawel Gorka <pjgorka@gmail.com>
+Date: Wed, 4 Sep 2019 13:22:54 +0000
+Subject: [PATCH] frambuffer support
+
+---
+ arch/arm/configs/fragment-02-multiv7_addons.config | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/arch/arm/configs/fragment-02-multiv7_addons.config b/arch/arm/configs/fragment-02-multiv7_addons.config
+index 7b489e4..015d348 100644
+--- a/arch/arm/configs/fragment-02-multiv7_addons.config
++++ b/arch/arm/configs/fragment-02-multiv7_addons.config
+@@ -294,6 +294,7 @@ CONFIG_DRM_SII902X=y
+ #
+ CONFIG_DRM_STM=y
+ CONFIG_DRM_STM_DSI=y
++CONFIG_DRM_FBDEV_EMULATION=y
+ 
+ #
+ # Backlight support
