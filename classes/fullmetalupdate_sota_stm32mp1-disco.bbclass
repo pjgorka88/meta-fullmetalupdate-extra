@@ -17,4 +17,3 @@ SOTA_MAIN_DTB_stm32mp1-disco ?= "stm32mp157c-dk2.dtb"
 
 INITRAMFS_FSTYPES = 'cpio.gz.u-boot'
 
-MACHINE_FEATURES = "gpu"
