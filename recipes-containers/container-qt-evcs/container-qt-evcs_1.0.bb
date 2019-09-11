@@ -23,7 +23,7 @@ IMAGE_INSTALL = " \
 # Container start up file
 CONTAINER_STARTUP= "${THISDIR}/files/entry.sh"
 # Runc container configuration
-RUNC_CONFIG = "${THISDIR}/${MACHINE}/qt-evcs-config.json"
+RUNC_CONFIG = "${THISDIR}/files/qt-evcs-config.json"
 # systemd container configuration
 SYSTEMD_CONFIG = "${THISDIR}/files/container-qt-evcs.service"
 
