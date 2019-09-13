@@ -1,24 +1,28 @@
-From 46337753c015cb39c8744c5bcf12b7ca1cd8e415 Mon Sep 17 00:00:00 2001
+  GNU nano 2.5.3                File: /data/yocto/sources/meta-fullmetalupdate-extra/recipes-kernel/linux/linux-stm32mp/0001-goodix.patch                                        
+
+From 98bea3b41fb91073597ca4aa081e21de6c5e0052 Mon Sep 17 00:00:00 2001
 From: Pawel Gorka <pjgorka@gmail.com>
-Date: Wed, 4 Sep 2019 13:15:54 +0000
-Subject: [PATCH] add touchscreen support
+Date: Wed, 11 Sep 2019 10:35:48 +0000
+Subject: [PATCH] goodix touchscreen support
 
 ---
  arch/arm/configs/fragment-02-multiv7_addons.config | 4 +++-
  1 file changed, 3 insertions(+), 1 deletion(-)
 
 diff --git a/arch/arm/configs/fragment-02-multiv7_addons.config b/arch/arm/configs/fragment-02-multiv7_addons.config
-index 7b489e4..cabb3b3 100644
+index 015d348..54d4d08 100644
 --- a/arch/arm/configs/fragment-02-multiv7_addons.config
 +++ b/arch/arm/configs/fragment-02-multiv7_addons.config
-@@ -161,7 +161,9 @@ CONFIG_SERIAL_NONSTANDARD=y
+@@ -161,8 +161,10 @@ CONFIG_SERIAL_NONSTANDARD=y
  #
  # Touchscreen drivers
  #
--CONFIG_TOUCHSCREEN_EDT_FT5X06=m
 +CONFIG_INPUT_EVDEV=y
 +CONFIG_INPUT_TOUCHSCREEN=y
-+CONFIG_TOUCHSCREEN_EDT_FT5X06=y
- CONFIG_TOUCHSCREEN_GOODIX=m
+ CONFIG_TOUCHSCREEN_EDT_FT5X06=m
+-CONFIG_TOUCHSCREEN_GOODIX=m
++CONFIG_TOUCHSCREEN_GOODIX=y
  
  #
+ # Non-8250 serial port support
+
