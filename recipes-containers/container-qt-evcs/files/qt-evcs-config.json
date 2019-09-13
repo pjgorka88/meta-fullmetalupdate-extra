@@ -166,7 +166,7 @@
             {"path":"/dev/fb0","type":"c","major":29,"minor":0,"fileMode":8624,"uid":1000,"gid":1000},
             {"path":"/dev/galcore","type":"c","major":199,"minor":0,"fileMode":8624,"uid":1000,"gid":1000},
             {"path":"/dev/dri/card0","type":"c","major":226,"minor":0,"fileMode":8624,"uid":1000,"gid":1000},
-	        {"path":"/dev/input/event0","type":"c","major":13,"minor":64,"fileMode":8624,"uid":1000,"gid":1000}
+            {"path":"/dev/input/event1","type":"c","major":13,"minor":65,"fileMode":8624,"uid":1000,"gid":1000}
         ],
         "maskedPaths": [
             "/proc/kcore",
